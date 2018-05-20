@@ -1,0 +1,15 @@
+#!/bin/bash
+#Count the number of occurance of a word in a line
+
+v_file="/home/unix/test.txt"
+
+while read line
+do
+ count1=`echo $line | awk 'BEGIN {count=0} 
+        { 
+        for(i=1;i<=NF;i++) { if($i == "hai") {count = count + 1}}
+        }        
+        END{ print count }'`
+ echo "$line,$count1"
+
+done < $v_file

@@ -1,0 +1,16 @@
+dominic@dominicpc:~/UnixTest$ sed -e '/HOME/s/$/9876/' abc.txt
+Hai
+How are you 
+HOME 123459876
+Hai
+dominic@dominicpc:~/UnixTest$ cat abc.txt
+Hai
+How are you 
+HOME 12345
+Hai
+dominic@dominicpc:~/UnixTest$ sed -i '/HOME/s/$/9876/' abc.txt
+dominic@dominicpc:~/UnixTest$ cat abc.txt
+Hai
+How are you 
+HOME 123459876
+Hai

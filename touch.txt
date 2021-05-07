@@ -1,0 +1,6 @@
+#create a file
+touch filename.txt
+
+#create a file with timestamp
+touch -t 2001121200 filename.txt
+

@@ -1,0 +1,2 @@
+#scp <source loction> <target location>
+scp <source file> <user>@<server>:<location>/file
